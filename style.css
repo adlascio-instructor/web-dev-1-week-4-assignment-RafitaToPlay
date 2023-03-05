@@ -19,14 +19,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
+    grid-template-columns: repeat (3.1fr);
+    grid-template-rows: 2;
+    grid-template-areas: ;
+
 }
 
 .form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 form {
@@ -42,10 +44,10 @@ form {
     top: 0;
     right: 0;
     z-index: -1;
-  }
+}
   
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .side-image {
       display: none;
     }
-  }
+}
