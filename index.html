@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/web-dev-1-week-4-assignment-RafitaToPlay/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+
+    <title>Camp In</title>
+
   </head>
-  <body></body>
+  <body>
+    <!--header-->
+    <div class="container">
+      <header>
+        <img src="/web-dev-1-week-4-assignment-RafitaToPlay/images/logo.svg" id="logoimg" alt="logo">
+      </header>
+      <!--login -->
+      <main>
+        <div class="login">
+          <img src="/web-dev-1-week-4-assignment-RafitaToPlay/images/log-in.svg" alt="">
+          <span>Login</span>
+        </div>
+        <div class="loginText">
+          <span>Insert your information <strong>below</strong>.</span>
+        </div>
+      </main>
+      <div class="form">
+        <form action="#submit" autocomplete="off" method="POST">
+          <fieldset>
+            <label for="email">E-mail</label>
+            <div class="email">
+              <img id="emailIcon" src="/web-dev-1-week-4-assignment-RafitaToPlay/images/mail.svg" alt="mailIcon">
+              <input id="email" type="email" placeholder="Type your email">
+            </div>
+            <label class="labelPassword" for="password">Password</label>
+            <div class="password">
+              <img id="passwordIcon" src="/web-dev-1-week-4-assignment-RafitaToPlay/images/lock.svg" alt="lockIcon">
+              <input id="password" type="password" placeholder="Type your password" required >
+              <button type="button" class="revealPassword"><img src="/web-dev-1-week-4-assignment-RafitaToPlay/images/eye.svg" alt="eyeIcon"></button>
+            </div>
+            <div class="forgotPassword">
+              <div class="checkbox">
+                <input type="checkbox">
+                <label for="checkbox">Remind me</label>
+              </div>
+              <span> <a href="#">Forgot my password</a></span>
+            </div>
+            <button class="btnSubmit" type="submit">Login</button>
+          </fieldset>
+          <div class="signUp">
+            <span>Don't have an account? <a href="#">Sign Up!</a> </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="side-image">
+      <img src="/web-dev-1-week-4-assignment-RafitaToPlay/images/side-image.jpg" alt="side-image">
+    </div>
+  </body>
 </html>
